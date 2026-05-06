@@ -88,7 +88,13 @@ func main() {
 		ctx.HTML(http.StatusOK, "index.tmpl", gin.H{})
 	})
 	router.GET("/my-account", func(ctx *gin.Context) {
-		ctx.HTML(http.StatusOK, "account.tmpl", gin.H{})
+		ctx.HTML(http.StatusOK, "account.tmpl", gin.H{
+			"ID":         1,
+			"Name":       "Иван",
+			"Surname":    "Иванович",
+			"Patronym":   "Иванов",
+			"Occupation": "Студент",
+		})
 	})
 
 	router.GET("journal", func(ctx *gin.Context) {
