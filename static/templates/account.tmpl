@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>личный кабинет</title>
+		<link rel="stylesheet" href="/stylesheets/style.css">
+		<link rel="stylesheet" href="/stylesheets/account.css">
+		<link rel="stylesheet" href="/stylesheets/grade-grid.css">
+	</head>
+	<body>
+		{{template "header"}}
+		<nav>
+			<ul>
+				<li><a href="">главное/</a></li>
+				<li><a href="">оценки/</a></li>
+				<li><a href="">успеваемость/</a></li>
+			</ul>
+		</nav>
+		<div id="main" class="nopadding">
+			<div class="banner">
+				<img src="/images/profile-{{.ID}}.png" alt="photo">
+			</div>
+			<h3 class="name">{{.Name}} {{.Surname}} {{.Patronym}}</h3>
+			<p class="occupation subtle">{{.Occupation}}</p>
+			<div class="divider"></div>
+			<div class="container">
+				{{template "graph"}}
+			</div>
+		</div>
+	</body>
+</html>

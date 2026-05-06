@@ -1,0 +1,126 @@
+:root {
+  --background: #fff;
+  --background-pale: #000;
+  --background-dark: #ddd;
+  --background-darker: #ccc;
+  --background-darkest: #aaa;
+  --foreground: #090a09;
+  --accent: #8cb369;
+  --accent-darker: #6e914f;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: var(--accent);
+  display: flex;
+  flex-direction: row;
+  clear: both;
+  overflow: hidden;
+  padding: 0.7ex;
+}
+
+header a {
+  color: var(--background);
+  text-decoration: none;
+  padding: 0.5ex 1ex;
+}
+
+header a:hover {
+  background-color: var(--accent-darker);
+}
+
+header a.logo {
+  font-weight: bold;
+}
+
+header a.right {
+  float: right;
+}
+
+div#page {
+  dispay: flex;
+  justify-content: center;
+}
+
+div#main {
+  margin: 0 0 0 200px;
+  max-width: 50em;
+  padding: 1.5em;
+}
+
+div.nopadding {
+  padding: 0 !important;
+  max-width: 1000em !important;
+}
+
+div.divider {
+  height: 1px;
+  width: inherit;
+  margin-top: 10px;
+  border-bottom: 1px solid var(--background-dark);
+}
+
+nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+h3 {
+  margin-block-start: 0.2em;
+}
+
+nav {
+  float: left;
+  margin: 0 1px 0 0;
+  padding: 1em 0;
+  border-right: 1px dotted var(--background-darker);
+  width: 200px;
+}
+
+#main ul {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+#main ul li p {
+  margin-top: 6px;
+  padding-top: 0px;
+}
+
+.subtle {
+  color: var(--background-darkest);
+  font-weight: 100;
+}
+
+div#main h3.logo {
+  color: var(--accent-darker)
+} 
+
+h3.dayum: {
+  text-decoration: underline solid var(--foreground);
+  margin-endline-end: 0px;
+}
+
+nav li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li a {
+  display: block;
+  color: var(--accent-darker);
+  text-decoration: none;
+  padding: 0.8ex 2em 0.8ex 1em;
+}

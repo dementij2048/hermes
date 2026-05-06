@@ -1,0 +1,17 @@
+div.lesson {
+  display: flex;
+  flex-direction: row;
+}
+
+div.lesson * {
+  margin-left: 10px;
+}
+
+div.lesson:nth-child(2n) {
+  background-color: var(--background-pale);
+}
+
+div.day p.day-date {
+  font-weight: 700;
+  font-size: 19pt;
+}
