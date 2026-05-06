@@ -1,6 +1,6 @@
 :root {
   --background: #fff;
-  --background-pale: #000;
+  --background-pale: #f9f9f9;
   --background-dark: #ddd;
   --background-darker: #ccc;
   --background-darkest: #aaa;
@@ -11,6 +11,10 @@
 
 html {
   overflow-y: scroll;
+}
+
+.right {
+  margin-left: auto;
 }
 
 body {
@@ -57,6 +61,10 @@ div#main {
   margin: 0 0 0 200px;
   max-width: 50em;
   padding: 1.5em;
+}
+
+div.max-width {
+  max-width: 1000em !important;
 }
 
 div.nopadding {

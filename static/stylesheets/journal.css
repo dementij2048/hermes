@@ -4,14 +4,66 @@ div.lesson {
 }
 
 div.lesson * {
+  padding-top: 1.3%;
+  padding-bottom: 1.3%;
   margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 div.lesson:nth-child(2n) {
   background-color: var(--background-pale);
 }
 
+div.day {
+  width: 100v;
+  border: 1px solid var(--background-dark);
+}
+
+div.lesson-number {
+  color: #676767;
+  width: 2%;
+}
+
+div.lesson-time {
+  width: 10%;
+}
+
+div.lesson-subject {
+  width: 16%;
+}
+
+div.lesson-homework {
+  width: 35%;
+}
+
+div.lesson-marks {
+  margin-left: auto !important;
+  width: 2%;
+}
+
+div.lesson-marks[data-grade="1"] {
+  color: #d63333;
+}
+div.lesson-marks[data-grade="2"] {
+  color: #d65933;
+}
+div.lesson-marks[data-grade="3"] {
+  color: #d68c33;
+}
+div.lesson-marks[data-grade="4"] {
+  color: #8ba13d;
+}
+div.lesson-marks[data-grade="5"] {
+  color: #4f9f1e;
+}
+
 div.day p.day-date {
   font-weight: 700;
   font-size: 19pt;
+  margin-left: 10px;
+  margin-bottom: 6px;
+  margin-top: 10px;
 }
+
+

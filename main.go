@@ -87,5 +87,5 @@ func main() {
 		ctx.HTML(http.StatusOK, "journal.tmpl", gin.H{})
 	})
 
-	router.Run("127.0.0.1:3257")
+	router.Run(":3257")
 }
